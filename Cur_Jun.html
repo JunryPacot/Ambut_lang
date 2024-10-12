@@ -44,17 +44,18 @@
       text-transform: uppercase;
     }
     
-    /* Link Styling */
-    #hero a {
+    /* Text Styling (formerly Link Styling) */
+    #hero .developer-text {
       margin-top: 10px;
       display: inline-block;
-      text-decoration: none;
       color: #fff;
       font-weight: 700;
       transition: color 0.3s ease;
+      cursor: default; /* Indicate non-clickable text */
     }
     
-    #hero a:hover {
+    /* Optional: Add a hover effect if desired */
+    #hero .developer-text:hover {
       color: #ff0; /* Change color on hover for better UX */
     }
     
@@ -74,7 +75,7 @@
   <div id="app">
     <div id="hero">
       <h1>JUNRY<br/>PACOT</h1>
-      <a target="_blank" href="https://github.com/klevron/threejs-toys">Junior Web Developer</a>
+      <span class="developer-text">Junior Web Developer</span>
     </div>
   </div>
   
@@ -100,4 +101,4 @@
   </script>
   
 </body>
-  </html>
+</html>
